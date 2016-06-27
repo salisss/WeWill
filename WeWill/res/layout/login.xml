@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登陆页面  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+<!--     <include -->
+<!--         android:id="@+id/login_loading" -->
+<!--         layout="@layout/loading" -->
+<!--         android:visibility="gone"/> -->
+    
+<RelativeLayout
+    android:id="@+id/login_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/lgbg2">
+    
+    <ImageView 
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible"/>
+    <EditText 
+        android:id="@+id/username"
+        android:layout_below="@id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="50dip"
+        android:paddingLeft="55dip"
+        android:hint="@string/login_label_username"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+	    android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:background="@drawable/login_editbg64"/>
+    <ImageView 
+        android:id="@+id/login_id64"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_alignLeft="@id/username"
+        android:layout_alignTop="@id/username"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/login_id64"/>
+<!--     <TextView -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignTop="@id/username" -->
+<!--         android:layout_toRightOf ="@id/login_id64" -->
+<!--         android:layout_marginLeft="8dip" -->
+<!--         android:layout_marginTop="10dip" -->
+<!--         android:text="@string/login_label_username" -->
+<!--         style="@style/normalText"/> -->
+    <EditText 
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="55dip"
+        android:hint="@string/login_label_password"
+        android:layout_below="@id/username"
+        android:inputType="textPassword"
+        android:password="true"
+        android:singleLine="true"
+        android:background="@drawable/login_editbg64"/>
+    <ImageView 
+        android:id="@+id/login_pw64"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_alignLeft="@id/password"
+        android:layout_alignTop="@id/password"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/login_pw64"/>
+<!--     <TextView  -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignTop="@id/password" -->
+<!--         android:layout_toRightOf ="@id/login_pw64" -->
+<!--         android:layout_marginLeft="8dip" -->
+<!--         android:layout_marginTop="10dip" -->
+<!--         android:text="@string/login_label_password" -->
+<!--         style="@style/normalText"/>  -->
+    <Button 
+         android:id="@+id/login_bt"
+         android:layout_width="match_parent"
+         android:layout_height="50dip"
+         android:layout_alignLeft="@id/password"
+         android:layout_alignRight="@id/password"
+         android:layout_below="@id/password"
+         android:layout_marginTop="20dip"
+         android:layout_centerHorizontal="true"
+         android:text="@string/login_label_signin"
+         style="@style/buttonText"
+         android:background="@drawable/login_bt"/>
+    <Button 
+         android:id="@+id/login_cancel"
+         android:layout_width="match_parent"
+         android:layout_height="50dip"
+         android:layout_alignLeft="@id/password"
+         android:layout_alignRight="@id/password"
+         android:layout_below="@id/login_bt"
+         android:layout_marginTop="20dip"
+         android:layout_centerHorizontal="true"
+         android:text="@string/login_label_cancel"
+         style="@style/buttonText"
+         android:textColor="#000000"
+         android:background="@drawable/exit_bt"/>
+    
+</RelativeLayout>
+
+</LinearLayout>
+
